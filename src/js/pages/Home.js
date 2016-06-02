@@ -1,12 +1,15 @@
 import React from "react";
 import SubHeading from "./../components/layout/SubHeading";
 import Stylesheet from 'react-inline';
+import CSSModules from 'react-css-modules';
+import styles from './../../css/styles.css';
 
 
 
 
+let Home;
 
-export default class Home extends React.Component {
+ Home = class extends React.Component {
     render() {
 
         var homeStyle= {
@@ -15,17 +18,22 @@ export default class Home extends React.Component {
             height: '800px'
         }
         return (
-            <div style={homeStyle}>
+            <div styleName='test-style'>
                 <a id="Home"></a>
             <SubHeading />
                 <p>
-                    Welcome to Haki.io ! We are really excited about our line of technologies we are offering.
-                    We organize our products by color scheme (check out the color of the Giraffe's tail).
+                    There are tons of technology solutions out there. Why not use one that works <i>with</i> your budget?
+                 </p>
+                Welcome to Haki.io! Where we offer technology solutions that you can afford.
 
-
-                </p>
-
+                <div id="scrollDown">
+                 <a href="#OurMission">
+                     <img id="scroll"  height= "100" src="./images/downButton.png" alt="Scroll Down"/>
+                     </a>
                 </div>
+            </div>
         );
     }
 }
+
+export default CSSModules(Home, styles);
