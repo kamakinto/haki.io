@@ -24,17 +24,14 @@ export default class Layout extends React.Component {
     return (
       <div >
         <Nav location={location}/>
-        <div class="container" style={layoutStyle}>
-          <div class="row">
-            <div class="col-lg-12">
+            <div>
         <Header />
             <Home />
             <Mission />
             <HakiPage />
             </div>
-            </div>
 
-      </div>
+
           <Footer />
       </div>
     );

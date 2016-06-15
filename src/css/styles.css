@@ -1,3 +1,117 @@
-.test-style {
+
+
+.navbar-custom{
+   background-color: #ffffff!important;
+    background-image: none;
+    border-bottom: black;
+}
+
+.a-custom {
+    color: black!important;
+}
+.a-custom:hover {
+    background-color: white!important;
+}
+
+.learn-more {
+    margin-bottom: 50px;
+}
+
+.navbar-links {
+    color: black;
+}
+
+.haki-def {
+    padding-top: 100px;
+    color: red;
+}
+
+
+.description-text {
     font-size: 30px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+    color: black;
+}
+.scroll-down-button{
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+.section-heading {
+    color: black;
+    font-size: 40px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+
+
+    padding-top: 100px;
+    margin-bottom: 50px;
+
+}
+
+.greySection {
+    background-color: #F0F0F0;
+    text-align: center;
+    padding-top:100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+
+}
+.whiteSection {
+    text-align: center;
+    padding-top:100px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+.banner-section{
+    text-align: center;
+}
+
+.tag-line-section{
+    padding-top: 0px;
+    text-align: center;
+    color: black;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+}
+.tag-line{
+    text-align: center;
+    color: black;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+    font-size: 45px;
+}
+
+.subtext {
+    font-size: 20px;
+    color: #777777;
+    padding-bottom: 20px;
+}
+
+.button-custom {
+    background-color: #F3152B ;
+    color: white;
+}
+
+/* Shrink */
+.hvr-shrink, .scroll-down-button{
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+.hvr-shrink:hover, .hvr-shrink:focus, .hvr-shrink:active, .scroll-down-button:hover,
+.scroll-down-button:focus,.scroll-down-button:active{
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
 }

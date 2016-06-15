@@ -1,31 +1,22 @@
 import React from "react";
 import { IndexLink, Link } from "react-router";
+import CSSModules from 'react-css-modules';
+import styles from './../../../css/styles.css';
+let Nav;
 
-
-export default class Nav extends React.Component {
+Nav = class extends React.Component {
     render() {
 
-        const navStyle = {
-            marginTop: "0px"
-        }
-        ;
+
         return (
-            <div style={navStyle}>
-            <nav class="navbar navbar-default navbar-fixed-top">
-                <div class="container" >
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-                    <div id="navbar" class="navbar-collapse collapse" style={navStyle}>
+            <div>
+            <nav class="navbar navbar-inverse navbar-fixed-top" styleName="navbar-custom">
+                <div class="container-fluid">
+                    <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
-                            <li><a href="#Home" activeClassName="active"> Home</a></li>
-                            <li><a href="#OurMission" activeClassName="active"> Our Mission </a></li>
-                            <li><a href="#HakiProjects" activeClassName="active"> Haki Projects </a></li>
+                            <li ><a href="#Home" activeClassName="active" styleName="a-custom"> Home</a></li>
+                            <li><a href="#OurMission" activeClassName="active" styleName="a-custom"> Our Mission </a></li>
+                            <li><a href="#HakiProjects" activeClassName="active" styleName="a-custom"> Haki Projects </a></li>
                         </ul>
                     </div>
                 </div>
@@ -34,3 +25,5 @@ export default class Nav extends React.Component {
         );
     }
 }
+
+export default CSSModules(Nav, styles);
